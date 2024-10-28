@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |   http://example.com/
 | WARNING: You MUST set this value!
 */
-$config['base_url'] = 'http://localhost/portfolio/';
+$config['base_url'] = 'https://alfaiz78.github.io/portfolio/';
 
 /*
 |--------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Set the correct RewriteBase
+  RewriteBase /portfolio/
+
+  # If the request is not a file or directory, route to index.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+  # If we don't have mod_rewrite installed, all 404's
+  # can be sent to index.php, and everything works as normal.
+  ErrorDocument 404 /index.php
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin: "*"
+</IfModule>

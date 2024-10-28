@@ -1,0 +1,40 @@
+# macOS system file
+.DS_Store
+
+# CodeIgniter cache and logs
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# CodeIgniter security and configuration files
+!application/*/.htaccess
+
+# Composer files
+composer.lock
+/vendor/
+
+# Tests and mock database
+tests/mocks/database/ci_test.sqlite
+
+# Documentation build files
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# IDE-specific files
+/nbproject/
+.idea/*
+
+# Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Test results
+/tests/tests/
+/tests/results/
